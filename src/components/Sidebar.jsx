@@ -1,3 +1,5 @@
+import { PencilLine} from '@phosphor-icons/react';
+
 import styles from './Sidebar.module.css';
 
 export function Sidebar(){
@@ -9,12 +11,15 @@ export function Sidebar(){
       />
 
       <div className={styles.profile}>
-        <strong>Jessica Guedes</strong>
+        <img className={styles.avatar} src="https://github.com/jessica-guedes.png"  />
+
+        <strong>Jéssica Guedes</strong>
         <span>Web Developer</span>
       </div>
 
       <footer>
         <a href="#">
+          <PencilLine size={20} />
           Editar seu perfil
         </a>
       </footer>
